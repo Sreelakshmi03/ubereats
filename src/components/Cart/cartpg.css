@@ -1,0 +1,22 @@
+
+.orders {
+  margin: 3rem 0 0 2rem;
+  min-height: calc(100vh - 15rem);
+}
+
+.orders-heading,
+.orders-total {
+  width: 100%;
+  max-width: 600px;
+}
+.orders-heading {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #000;
+}
+.orders-total {
+  text-align: right;
+  border-top: 2px solid #000;
+  margin-left: 700px;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}

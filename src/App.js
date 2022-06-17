@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './components/Header/Header'
+import "./components/Header/Header";
+import { BrowserRouter,Routes, Route } from 'react-router-dom';
+import Menucard from './components/menu/Menucard';
+import Cart from './components/Cart/Cart';
+import { menuItemsData } from "./apis/data";
+import Footer from './components/footer/Footer';
+import Center from './components/center/Center';
+import CenterBox from './components/center/CenterBox';
+import SignIn from './components/auth/SIgnIn';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route path="/menu" element={<Menucard list={menuItemsData} />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/signin" element={ <SignIn/>} />
+        
+        
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+export default App

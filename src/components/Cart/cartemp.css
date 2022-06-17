@@ -1,0 +1,41 @@
+.emptyCart {
+  height: calc(100vh - 13.7rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.emptyCart img {
+  width: 100%;
+  height: 100%;
+  /* margin-left: 300px; */
+  object-fit:fill;
+  max-width: 400px;
+  border:1px solid black;
+  border-radius: 60px;
+  border:none;
+}
+
+.emptyCart button span   {
+  background: #000;
+  color: #fff;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  cursor: pointer;
+  margin-top: 2.5rem;
+}
+.emptyCart button{
+    outline: none;
+  border: none;
+  background-color: #fff;
+}

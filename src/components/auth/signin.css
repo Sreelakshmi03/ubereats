@@ -1,0 +1,50 @@
+article
+{
+    
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.login__container {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+login__container>h2
+{
+  
+    font-weight: 500;
+    margin-bottom: 70px;
+  
+
+}
+login__container > form > h5 {
+    margin-bottom: 5px;
+}
+input {
+    height: 30px;
+
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+  }
+  button
+  {
+    border:1px solid black;
+    border-radius: 20px;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    margin-top: 50px;
+    background-color:goldenrod ;
+    color: white;
+    font-weight: 500;
+
+  }
